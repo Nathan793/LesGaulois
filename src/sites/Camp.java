@@ -1,17 +1,17 @@
 package sites;
-import personnages.Gaulois;
+import personnages.*;
 public class Camp {
-	protected String chef;
+	protected Soldat commandant;
 	private String[] romain = new String[80];
 	
 	
-	public Camp(String chef) {
-		this.chef=chef;
+	public Camp(Soldat commandant) {
+		this.commandant;
 	}
 	
 	@Override
-	public String donnerChef() {
-		return (chef);
+	public Soldat getCommandant() {
+		return (commandant);
 	}
 	
 	
