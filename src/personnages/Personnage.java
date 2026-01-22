@@ -3,29 +3,28 @@ package personnages;
 public abstract class Personnage {
 	private String nom;
 	private int force;
-	protected String Auteur ;
-	
+	protected String Auteur;
+
 	protected Personnage(String nom, int force) {
-		this.nom=nom ;
-		this.force=force;
-	
+		this.nom = nom;
+		this.force = force;
 	}
+
 	public String getNom() {
 		return nom;
 	}
-	
+
 	protected abstract String donnerAuteur();
-		
-		
-	
-	
+
 	public void parler(String texte) {
 		System.out.println(donnerAuteur() + nom + "  : « " + texte + " ».");
 	}
+
 	public void frapper(Romain romain) {
-		System.out.println(donnerAuteur() +" "+ nom + "envoie un grand coup dans la mâchoire de " + romain.getNom());
+		System.out.println(donnerAuteur() + " " + nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
 		romain.recevoirCoup(force / 3);
 	}
+
 	public void recevoirCoup(int forceCoup) {
 		force = force - forceCoup;
 
@@ -36,15 +35,7 @@ public abstract class Personnage {
 		} else {
 			parler("Aïe !");
 		}
-	
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
