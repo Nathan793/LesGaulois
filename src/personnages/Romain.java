@@ -1,8 +1,8 @@
 package personnages;
 
 public class Romain extends Personnage {
-
-	public Romain(String nom, int force) {
+	private Grade grade ;
+	public Romain(String nom, int force ) {
 		super(nom,force); 
 	}
 
@@ -10,6 +10,9 @@ public class Romain extends Personnage {
 	public String donnerAuteur() {
 		return ("Le Romain");
 
+	}
+	public Grade getGrade() {
+		return grade ;
 	}
 
 }
