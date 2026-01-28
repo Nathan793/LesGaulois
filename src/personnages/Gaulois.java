@@ -10,7 +10,8 @@ public class Gaulois extends Personnage {
 	public String donnerAuteur() {
 		return ("Le Gaulois");
 	}
-
+	
+	
 
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Asterix", 8);

@@ -2,7 +2,7 @@ package personnages;
 
 public abstract class Personnage {
 	private String nom;
-	private int force;
+	protected int force;
 	protected String Auteur;
 
 	protected Personnage(String nom, int force) {
@@ -13,7 +13,10 @@ public abstract class Personnage {
 	public String getNom() {
 		return nom;
 	}
-
+	//public int getForce() {
+		//return force ;
+	//}
+	
 	protected abstract String donnerAuteur();
 
 	public void parler(String texte) {

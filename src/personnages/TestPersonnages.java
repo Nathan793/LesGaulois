@@ -6,7 +6,7 @@ public static void main(String[] args) {
 	
 	
 	
-	System.out.println(asterix.getNom());
+	System.out.println(Asterix.getNom());
 }
 }
 
